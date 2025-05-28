@@ -1,0 +1,1 @@
+(function(n){kendo.ui.NumericTextBox&&(kendo.ui.NumericTextBox.prototype.options=n.extend(!0,kendo.ui.NumericTextBox.prototype.options,{upArrowText:"Aumenta valore",downArrowText:"Diminuisci valore"}))})(window.kendo.jQuery);

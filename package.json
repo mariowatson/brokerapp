@@ -1,0 +1,12 @@
+{
+  "name": "broker-app",
+  "version": "1.0.0",
+  "description": "Static broker site for local test and Heroku deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
