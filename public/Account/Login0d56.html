@@ -7,16 +7,14 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web" />
-  <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/bootstrap%404.6.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="../../kendo.cdn.telerik.com/themes/11.0.2/bootstrap/bootstrap-main.css" />
-  <link rel="stylesheet" href="../CssManager.css" />
-  <link rel="stylesheet" href="../Style/site.min28d7.css" />
-  <link rel="stylesheet" href="../Style/responsive.min28d7.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/11.0.2/bootstrap/bootstrap-main.css" />
+  <link rel="stylesheet" href="/CssManager.css" />
+  <link rel="stylesheet" href="/Style/site.min28d7.css" />
+  <link rel="stylesheet" href="/Style/responsive.min28d7.css" />
 </head>
 <body class="brokerplus">
-
-  <!-- 🛑 Removed form tag to prevent external postback -->
 
   <section class="main login">
     <div class="mask"></div>
@@ -68,7 +66,7 @@
     </div>
   </section>
 
-  <!-- ✅ Injected Fake Login Script -->
+  <!-- ✅ Functional Login Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const loginBtn = document.getElementById("Main_ctl02_Button_Go");
@@ -79,11 +77,10 @@
           e.preventDefault();
 
           const email = emailInput.value.trim();
-          const password = "12345678"; // Simulated password (hardcoded)
 
           if (email === "test@broker.com") {
             localStorage.setItem("user", JSON.stringify({ email }));
-            window.location.href = "/dashboard.html"; // Change to your desired destination
+            window.location.href = "/dashboard.html";
           } else {
             alert("Invalid email or password.\nUse test@broker.com / 12345678");
           }
